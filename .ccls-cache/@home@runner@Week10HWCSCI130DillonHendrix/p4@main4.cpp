@@ -14,11 +14,11 @@ int main(){
   int nums[NUMS] = {16, 54, 7, 43, -5};
   int total = 0, *nPt;
 
-  nPt = nums;  // Store address of nums[0] in nPt
+  /* nPt = nums;  // Store address of nums[0] in nPt
   while (nPt < nums + NUMS)
-    total += *nPt++;
+    total += *nPt++; */
 
-  //for (nPt = nums; nPt < nums + NUMS + 1; total += *nPt++)
+  for (nPt = nums; nPt < nums + NUMS + 1; total += *nPt++)
 
   cout << "The total of the array elements is " << total << endl;
 
