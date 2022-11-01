@@ -6,7 +6,7 @@
 
 #include <iostream>
 #include <iomanip>
-
+#include <string>
 using namespace std;
 
 /************* Function Prototypes **************/
@@ -21,13 +21,19 @@ int main() {
 
   string alphabetOrder;
   cout << "Input a random order of the english alphabet in which you think the letters will corrispond with the word: ";
-  cin >> alphabetOrder;
+  cin >> alph;
   cout << endl;
 
   // Convert the 2 inputs into 2 seperate 1d arrays each letter getting its own spot.
+   
+    // the c_str() function returns
+    // a const pointer to null
+    // terminated contents.
+    const char* arrayword = word.c_str();
+    cout << arrayword << endl;
 
-  char wordArray[wordlength];
-  char AOA[26];
+    const char* arrayalpha = alph.c_str();
+    cout << alph << endl;
   
   // Function that runs through the first array letter by letter starting at the first letter of the second array. Keep going until all of that same letter are found in the starting word then move the the second letter.
 
@@ -42,3 +48,4 @@ int main() {
 /******************* Function *********************/
 
 // function that goes throught the arrays in parrallel
+

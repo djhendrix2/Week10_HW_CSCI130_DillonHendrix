@@ -11,7 +11,7 @@ using namespace std;
 
 const int numRecs = 5; // max number of records
 
-struct CarRec         // Global declaration 
+struct CarRec          // Global declaration 
 {    
 int CN;
 int MD;
